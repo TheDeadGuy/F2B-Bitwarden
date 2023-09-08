@@ -1,0 +1,10 @@
+[bitwarden]
+backend = auto
+enabled = true
+port = 80,443,8081,8443,8080
+filter = bitwarden
+banaction = firewallcmd-multiport-fw[actiontype=<multiport>]
+logpath = /opt/bitwarden/bwdata/logs/identity/Identity/*.txt
+maxretry = 3
+bantime = 14400
+findtime = 14400

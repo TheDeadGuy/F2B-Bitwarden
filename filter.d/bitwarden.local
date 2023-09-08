@@ -1,0 +1,5 @@
+[INCLUDES]
+before = common.conf
+
+[Definition]
+failregex = ^%(__prefix_line)s\s*\[(?:W(?:RN|arning)|Bit\.Core\.[^\]]+)\]\s+Failed login attempt(?:, 2FA invalid)?\. <ADDR>$
